@@ -1,6 +1,6 @@
 # herrymovieapps
 
-A new Flutter project.
+Flutter My Project Test TMDB API 
 
 ## Getting Started
 
