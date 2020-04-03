@@ -39,10 +39,9 @@ class MovieListState extends State<MovieList> {
           color: mainColor,
         ),
         title: new Text(
-          'Movies',
+          'AdipramanaMoviesApp',
           style: new TextStyle(
               color: mainColor,
-              fontFamily: 'Arvo',
               fontWeight: FontWeight.bold),
         ),
         actions: <Widget>[
@@ -82,6 +81,7 @@ class MovieListState extends State<MovieList> {
   }
 }
 
+//getApi function
 Future<Map> getJson() async {
   var apiKey = getApiKey();
   var url = 'http://api.themoviedb.org/3/discover/movie?api_key=${apiKey}';
@@ -99,12 +99,12 @@ class MovieTitle extends StatelessWidget {
     return new Padding(
       padding: const EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 16.0),
       child: new Text(
-        'AdipramanaMovies',
+        'lagi Ngetop katanya..',
         style: new TextStyle(
             fontSize: 20.0,
             color: mainColor,
             fontWeight: FontWeight.bold,
-            fontFamily: 'Arvo'),
+            ),
         textAlign: TextAlign.left,
       ),
     );
@@ -158,7 +158,7 @@ class MovieCell extends StatelessWidget {
                         movies[i]['title'],
                         style: new TextStyle(
                             fontSize: 20.0,
-                            fontFamily: 'Arvo',
+
                             fontWeight: FontWeight.bold,
                             color: mainColor),
                       ),
@@ -167,7 +167,8 @@ class MovieCell extends StatelessWidget {
                         movies[i]['overview'],
                         maxLines: 3,
                         style: new TextStyle(
-                            color: const Color(0xff8785A4), fontFamily: 'Arvo'),
+                            color: const Color(0xff8785A4)
+                        ),
                       )
                     ],
                     crossAxisAlignment: CrossAxisAlignment.start,
