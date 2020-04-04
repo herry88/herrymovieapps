@@ -4,7 +4,7 @@ Flutter My Project Test TMDB API
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Ini adalah project Work From Home 8-)
 
 A few resources to get you started if this is your first Flutter project:
 
